@@ -1,9 +1,9 @@
 <h1> 👩‍🦽 O JEITO MAIS RÁPIDO DE CONECTAR O CIDADÃO COM A PREFEITURA - RECLAMA BRASIL 👩‍🦽 </h1>
 
 
-<p>
-  <img src="RECLAMA_BRASIl!.png" width=900px/>
-</p>
+
+  <img src="RECLAMA_BRASIL!.png" width=900px/>
+
 
 
 ## Como o cidadão pode ajudar na zeladoria pública de sua cidade?
