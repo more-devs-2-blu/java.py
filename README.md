@@ -60,14 +60,14 @@ $ python manage.py runserver
 ## ✒️ Equipe
 
 
-| Alunos                              | Função                      |  Github                                       | 
-| ----------------------------------- | --------------------------- | --------------------------------------------- |
-| David                               | Back-end                    |  [Github](https://github.com/davidsimas)       |
-| Everton                             | Back-end                   | [Github](https://github.com/EvertonDenega)    |
-| Guilherme                           | Front-end          | [Github](https://github.com/guiwamser)     |
-| João                                | Arquiteto de software     | [Github](https://github.com/JoaoCasali)   |
-| Larissa                          | Gerente de projetos                    | [Github](https://github.com/lsebold) |
-| Luiza                              |  UX/UI e Front-end                   | [Github](https://github.com/LuizaBissoni)        |
+| Alunos                              | Função                      |  Github                                       | Linkedin      |
+| ----------------------------------- | --------------------------- | --------------------------------------------- |-------------|
+| David                               | Back-end                    |  [Github](https://github.com/davidsimas)       | [Linkedin](https://www.linkedin.com/in/david-simas81/)
+| Everton                             | Back-end                   | [Github](https://github.com/EvertonDenega)    | [Linkedin](https://www.linkedin.com/in/evertonds/)
+| Guilherme                           | Front-end          | [Github](https://github.com/guiwamser)     | [Linkedin](https://www.linkedin.com/in/guilhermewamser/)
+| João                                | Arquiteto de software     | [Github](https://github.com/JoaoCasali)   | [Linkedin](https://www.linkedin.com/in/joao-vitor-casali/)
+| Larissa                          | Gerente de projetos                    | [Github](https://github.com/lsebold) | [Linkedin](https://www.linkedin.com/in/larissahsebold/)
+| Luiza                              |  UX/UI e Front-end                   | [Github](https://github.com/LuizaBissoni)        | [Linkedin](https://www.linkedin.com/in/luizabissoni/)
 
 ## Tecnologias utilizadas
 [![My Skills](https://skills.thijs.gg/icons?i=python,js,html,css,django,docker,mysql,git,figma)](https://skills.thijs.gg)
