@@ -21,8 +21,24 @@
                         <a class="nav-link" href="{% url 'home' %}">Página inicial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'comentarios/listagem' %}">Comentários</a>
+                        <a class="nav-link" href="{% url 'comentarios/listagem' %}?value=1">Comentários</a>
                     </li>
+
+                    <!-- Dropdown Menu-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="{% url 'comentarios/listagem' %}?value=0">Comentários</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="{% url 'comentarios/listagem' %}?value=1">Segurança</a>
+                            <a class="dropdown-item" href="{% url 'comentarios/listagem' %}?value=2">Acessibilidade</a>                
+                            <a class="dropdown-item" href="{% url 'comentarios/listagem' %}?value=3">Saúde pública</a>
+                            <a class="dropdown-item" href="{% url 'comentarios/listagem' %}?value=4">Outros</a>
+                        </div>
+                    </li>
+                    <!-- End Dropdown Menu -->
+
+
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'manual' %}">Manual</a>
                     </li>

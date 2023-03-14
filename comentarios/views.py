@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 from .models import Comentario
 
 
-@login_required
+#@login_required
 def Cadastro(request):
     if request.method == "GET":
         return render(request, 'comentarios/cadastro.html')
@@ -38,7 +38,19 @@ def Cadastro(request):
 
     return redirect('home')
 
-
+'''
 def Listagem(request):
     List = Comentario.objects.all()
     return render(request, 'comentarios/listagem.html', {'List': List})
+'''
+
+def Listagem(request):
+    value = int(request.GET.get('value'))
+
+
+    if value != 0:
+        List = Comentario.objects.filter(topico=value)
+        return render(request, 'comentarios/listagem.html', {'List': List})
+    else:
+        List = Comentario.objects.all()
+        return render(request, 'comentarios/listagem.html', {'List': List})
