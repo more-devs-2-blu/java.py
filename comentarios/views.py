@@ -45,12 +45,20 @@ def Listagem(request):
 '''
 
 def Listagem(request):
-    value = int(request.GET.get('value'))
+    # Tenta converter o valor do parâmetro "value" para um inteiro.
+    # Se a conversão falhar, define o valor padrão como zero.
+    try:
+        value = int(request.GET.get('value', '0'))
+    except ValueError:
+        value = 0
 
-
+    # Verifica se o valor é diferente de zero.
     if value != 0:
+        # Filtra os comentários pelo tópico especificado.
         List = Comentario.objects.filter(topico=value)
-        return render(request, 'comentarios/listagem.html', {'List': List})
     else:
+        # Obtém todos os comentários.
         List = Comentario.objects.all()
-        return render(request, 'comentarios/listagem.html', {'List': List})
+
+    # Renderiza o template com a lista de comentários.
+    return render(request, 'comentarios/listagem.html', {'List': List})
