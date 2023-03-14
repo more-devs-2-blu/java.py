@@ -25,13 +25,13 @@ def Cadastro(request):
     comentario = Comentario(
         resumo = resumo, 
         descricao = descricao, 
-        topico= categoria, 
-        cidadao= request.user,
-        uf= uf,
-        bairro= bairro,
-        rua= rua,
-        complemento= complemento,
-        cidade= cidade,
+        topico = categoria, 
+        cidadao = request.user,
+        uf = uf,
+        bairro = bairro,
+        rua = rua,
+        complemento = complemento,
+        cidade = cidade,
         )
 
     comentario.save()
