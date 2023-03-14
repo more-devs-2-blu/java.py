@@ -1,0 +1,140 @@
+/* Tamanhos padrão dos inputs (Para colocar na div com classe input-label-flutuante) */
+.grande {
+    flex-basis: 530px;
+}
+
+.medio {
+    flex-basis: 350px;
+}
+
+.pequeno {
+    flex-basis: 170px;
+}
+
+.linha {
+    display: flex;
+}
+
+/* È preciso manipular o placeholder duas vezes pois alguns navegadores não aceitam a primeira forma*/
+::placeholder {
+    opacity: 0;
+}
+
+:-ms-input-placeholder {
+    opacity: 0;
+}
+
+.input-label-flutuante {
+    position: relative;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.descricao,
+.imagem {
+    color: var(--main-color);
+}
+
+.input-label-flutuante input {
+    background-color: var(--contrast-color);
+    color: var(--main-color);
+    padding: 10px 15px;
+    width: 100%;
+    outline: none;
+    border: 2px solid var(--light-color);
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+.input-label-flutuante input:-webkit-autofill,
+.input-label-flutuante input:-webkit-autofill:hover,
+.input-label-flutuante input:-webkit-autofill:focus {
+    border: 2px solid var(--light-color);
+    outline: none;
+    -webkit-text-fill-color: var(--main-color);
+    -webkit-box-shadow: 0 0 0 30px var(--contrast-color) inset;
+}
+
+.input-label-flutuante>label {
+    color: var(--main-color);
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    font-size: 1.1rem;
+    transition: 0.5s ease;
+}
+
+.input-label-flutuante>input:focus+label,
+.input-label-flutuante>input:not(:placeholder-shown)+label {
+    color: var(--main-color);
+    background-color: var(--contrast-color);
+    border-radius: 10px;
+    position: absolute;
+    top: -10px;
+    font-size: 1rem;
+    padding: 0px 5px;
+}
+
+.input-label-flutuante>label span {
+    color: var(--danger-color);
+}
+
+.acoes {
+    margin-top: 20px;
+}
+
+/* input sem label flutuante */
+
+.input-label {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-label label {
+    color: var(--main-color);
+    font-size: 1.1rem;
+}
+
+.input-label select {
+    appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    background-color: var(--contrast-color);
+    color: var(--main-color);
+    padding: 10px 15px;
+    width: 80%;
+    outline: none;
+    border: 2px solid var(--light-color);
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+.input-label select:focus {
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-label option {
+    border: 2px solid var(--light-color);
+    border-radius: 10px;
+}
+
+/* Input imagem */
+
+.input-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid var(--light-color);
+    padding: .2rem;
+}
+
+input[type="file"] {
+    display: none;
+}

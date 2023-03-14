@@ -1,0 +1,39 @@
+{% extends 'Layout.html' %}
+
+{% load static %}
+
+{% block 'title'%}Cadastro comentário{% endblock 'title' %}
+{% block 'scripts' %}
+
+<link rel="stylesheet" href="{% static 'css/comentarios/listagem.css'%}">
+<link rel="stylesheet" href="{% static 'css/edicao.css'%}">
+<script src="{% static 'scripts/comentarios/listagem.js'%}"></script>
+
+{% endblock 'scripts' %}
+
+{% block 'content' %}
+
+<h1 style="text-align: center;">Comentários</h1>
+
+<div class="listagem">
+
+    {% for value in List %}
+    <div class="comentario">
+        <div class="info">
+            <img src="{% static 'img/Usuário sem foto.png'%}" alt="Usuário sem foto">
+            <div class="dados">
+                <p class="nomeUsuario">{{value.cidadao.first_name}}</p>
+                <p class="cidadeUsuario">{{value.cidade}}, {{value.bairro}}</p>
+            </div>
+            <span class="space"></span>
+            <div class="resumo">{{value.resumo}}</div>
+        </div>
+        <div class="conteudo invisivel">
+            <textarea class="summernote listagem">{{value.descricao}}</textarea>
+        </div>
+    </div>
+    {% endfor %}
+
+</div>
+
+{% endblock 'content' %}

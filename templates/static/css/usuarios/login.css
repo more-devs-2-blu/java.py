@@ -1,0 +1,28 @@
+body {
+    background-color: var(--dark-color);
+}
+
+.conteudo {
+    min-height: 300px;
+    margin: auto auto;
+    background-color: var(--contrast-color);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 200px 100px var(--main-color);
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.titulo h2 {
+    margin: 0;
+}
+
+.conteudo form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

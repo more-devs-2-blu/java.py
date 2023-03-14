@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block 'title' %}Tá perdido{% endblock 'title' %}
+
+{% block 'scripts' %}
+
+<link rel="stylesheet" href="{% static 'css/main/notFound.css'%}">
+
+{% endblock 'scripts' %}
+
+{% block 'layout' %}
+
+<div class="centralizado">
+    <h1>Se perdeu, amigão?</h1>
+</div>
+
+{% endblock 'layout' %}

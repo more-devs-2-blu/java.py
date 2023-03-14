@@ -1,0 +1,102 @@
+{% extends 'Layout.html' %}
+
+{% load static %}
+
+{% block 'title'%}Cadastro comentário{% endblock 'title' %}
+{% block 'scripts' %}
+
+<link rel="stylesheet" href="{% static 'css/comentarios/cadastro.css'%}">
+<link rel="stylesheet" href="{% static 'css/edicao.css'%}">
+
+{% endblock 'scripts' %}
+
+{% block 'content' %}
+
+
+<div class="conteudo">
+    <h1>Cadastro de comentários</h1>
+
+    <form action="{% url 'comentarios/cadastro' %}" id="cadastro" method="post">
+        {% csrf_token %}
+        <div class="linha">
+            <div class="col-md">
+                <div class="linha">
+                    <div class="input-label-flutuante medio">
+                        <input type="text" id="resumo" name="resumo" required
+                            placeholder="Digite o tópico do seu comentário">
+                        <label for="resumo">Assunto</label>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="input-label-flutuante pequeno">
+                        <input type="text" class="cep" id="cep" name="cep" required
+                            placeholder="Digite o tópico do seu cep">
+                        <label for="cep">cep</label>
+                    </div>
+                    <div class="input-label-flutuante pequeno">
+                        <input type="text" id="uf" name="uf" required placeholder="Digite">
+                        <label for="uf">Estado</label>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="input-label-flutuante grande">
+                        <input type="text" id="cidade" name="cidade" required placeholder="Digite">
+                        <label for="cidade">Cidade</label>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="input-label-flutuante grande">
+                        <input type="text" id="bairro" name="bairro" required placeholder="Digite">
+                        <label for="bairro">Bairro</label>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="input-label-flutuante medio">
+                        <input type="text" id="rua" name="rua" required placeholder="Digite">
+                        <label for="rua">Rua</label>
+                    </div>
+                    <div class="input-label-flutuante pequeno">
+                        <input type="text" id="numero" name="numero" placeholder="Digite">
+                        <label for="numero">Número</label>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="input-label-flutuante grande">
+                        <input type="text" id="complemento" name="complemento" placeholder="Digite">
+                        <label for="complemento">Complemento</label>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="input-label medio">
+                        <label for="categoria">Categoria</label>
+                        <select name="categoria">
+                            <option value="1">Segurança</option>
+                            <option value="2">Acessibilidade</option>
+                            <option value="3">Saúde pública</option>
+                            <option value="4">Outros</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="linha">
+                    <div class="input-label" style="max-width: 800px;">
+                        <label for="categoria">Descrição</label>
+                        <textarea class="summernote editavel" name="descricao"></textarea>
+                    </div>
+                </div>
+                <div class="linha acoes">
+                    <button type="submit" form="cadastro" class="btn btn-success">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock 'content' %}

@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block 'scripts' %}
+
+<script src="{% static 'scripts/edicao.js'%}"></script>
+
+{% endblock 'scripts' %}
+
+{% block 'layout' %}
+
+{% include 'shared/header.html' %}
+
+<div class="principal">
+
+    {% block 'content' %}
+
+    {% endblock 'content' %}
+
+</div>
+
+{% endblock 'layout' %}

@@ -1,0 +1,24 @@
+{% extends 'Layout.html' %}
+
+{% load static %}
+
+{% block 'title'%}Home{% endblock 'title' %}
+{% block 'scripts' %}
+
+<link rel="stylesheet" href="{% static 'css/main/home.css'%}">
+
+{% endblock 'scripts' %}
+
+{% block 'content' %}
+
+<div class="conteudo">
+    <div class="secao">
+        <h2>O jeito mais rápido de conectar o cidadão com a prefeitura.</h2>
+        <p>Um canal de comunicação direto com a prefeitura, possibilitando mandar uma sugestão, reclamação ou elogio de
+            forma rápida e fácil.</p>
+        <a href="#" class="btn btn-primary">Cadastre-se</a>
+    </div>
+    <img src="{% static 'img/logo.png'%}" alt="Logo da java.py">
+</div>
+
+{% endblock 'content' %}
