@@ -1,8 +1,9 @@
-<h1> 👩‍🦽 O JEITO MAIS RÁPIDO DE CONECTAR O CIDADÃO COM A PREFEITURA - RECLAMA BRASIL 👩‍🦽 </h1>
+<h2>O JEITO MAIS RÁPIDO DE CONECTAR O CIDADÃO COM A PREFEITURA - RECLAMA BRASIL</h2>
 
 
 
-## Como o cidadão pode ajudar na zeladoria pública de sua cidade?
+
+<h3> Como o cidadão pode ajudar na zeladoria pública de sua cidade?</h3>
 
 Um dos desafios enfrentados pelas prefeituras é garantir que os cidadãos possam participar de forma ativa e efetiva na zeladoria da cidade. Para solucionar esse problema e facilitar a comunicação entre a população e o poder público, foi desenvolvido um site que funciona como uma plataforma de sugestões, reclamações e elogios.
 
@@ -14,7 +15,7 @@ Em resumo, o site é uma ferramenta valiosa para conectar os cidadãos com a pre
 
 
 ## Protótipo
-<a href="'''https://www.figma.com/file/KJx9h6AVgJvr1x4J7j613n/luiza-bissoni's-team-library?node-id=537%3A36&t=2bLavk7wJ4WcgBW6-1'''">Clique aqui</a> para acessar o protótipo.
+<a href="https://www.figma.com/file/KJx9h6AVgJvr1x4J7j613n/luiza-bissoni's-team-library?node-id=537%3A36&t=2bLavk7wJ4WcgBW6-1">Clique aqui</a> para acessar o protótipo.
 
 ## Demonstração da Aplicação
 
@@ -57,15 +58,15 @@ $ python manage.py runserver
 
 | Alunos                              | Função                      |  Github                                       | Linkedin      |
 | ----------------------------------- | --------------------------- | --------------------------------------------- |-------------|
-| David                               | Back-end                    |  [Github](https://github.com/davidsimas)       | [Linkedin](https://www.linkedin.com/in/david-simas81/)
-| Everton                             | Back-end                   | [Github](https://github.com/EvertonDenega)    | [Linkedin](https://www.linkedin.com/in/evertonds/)
-| Guilherme                           | Front-end          | [Github](https://github.com/guiwamser)     | [Linkedin](https://www.linkedin.com/in/guilhermewamser/)
-| João                                | Arquiteto de software     | [Github](https://github.com/JoaoCasali)   | [Linkedin](https://www.linkedin.com/in/joao-vitor-casali/)
-| Larissa                          | Gerente de projetos                    | [Github](https://github.com/lsebold) | [Linkedin](https://www.linkedin.com/in/larissahsebold/)
-| Luiza                              |  UX/UI e Front-end                   | [Github](https://github.com/LuizaBissoni)        | [Linkedin](https://www.linkedin.com/in/luizabissoni/)
+| David                               | Back-End                    |  [Github](https://github.com/davidsimas)       | [Linkedin](https://www.linkedin.com/in/david-simas81/)
+| Everton                             | Back-End                   | [Github](https://github.com/EvertonDenega)    | [Linkedin](https://www.linkedin.com/in/evertonds/)
+| Guilherme                           | Front-End          | [Github](https://github.com/guiwamser)     | [Linkedin](https://www.linkedin.com/in/guilhermewamser/)
+| João                                | Arquiteto de Software     | [Github](https://github.com/JoaoCasali)   | [Linkedin](https://www.linkedin.com/in/joao-vitor-casali/)
+| Larissa                          | Gerente de Projetos                    | [Github](https://github.com/lsebold) | [Linkedin](https://www.linkedin.com/in/larissahsebold/)
+| Luiza                              |  UX/UI e Front-End                   | [Github](https://github.com/LuizaBissoni)        | [Linkedin](https://www.linkedin.com/in/luizabissoni/)
 
 ## Tecnologias utilizadas
-[![My Skills](https://skills.thijs.gg/icons?i=python,js,html,css,django,docker,mysql,git,figma)](https://skills.thijs.gg)
+[![My Skills](https://skills.thijs.gg/icons?i=python,js,html,css,django,mysql,git,figma)](https://skills.thijs.gg)
 
 ## Licença
 
@@ -77,5 +78,5 @@ $ python manage.py runserver
 
 ## Agradecimentos
 
-* O time foi agil e preciso.
+* O time foi ágil e preciso.
 * Obrigado ao instrutor Andre Vitor Granemann.
