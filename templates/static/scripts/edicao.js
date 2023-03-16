@@ -84,25 +84,6 @@ $(document).ready(function () {
         else {
             $(this).val("");
         }
-
-        // $.ajax({
-        //     url: makeUrl('Auth/VerificarCNPJ?cnpj=') + value,
-        //     type: 'GET',
-        //     async: false,
-        //     dataType: 'json',
-        //     success: function (response) {
-        //         if (response.Resposta == false) {
-        //             alert('CNPJ inválido');
-        //             $('#cpf_cnpj').val('');
-        //         } else {
-        //             $(this).val(formatted_value);
-        //         }
-        //     },
-        //     error: function (xhr, status, error) {
-        //         alert(error);
-        //     }
-        // });
-
     });
 
     $(".cep").blur(function () {

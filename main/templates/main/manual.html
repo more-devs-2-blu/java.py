@@ -13,105 +13,76 @@
 {% block 'content' %}
 
 <div class='conteudo'>
-
-    <h2 style="text-align: center">Manual de utilizacao</h2>
-    
-    <section class="carousel" aria-label="Gallery" >
-        <ol class="carousel__viewport">
-          <li id="carousel__slide1"
-              class="carousel__slide">
-              <img src="{% static 'img/filtro_comentarios.jpg' %}" alt="imagem 1">
+   <h2 style="text-align: center">Manual de utilizacao</h2>
+   <section class="carousel" aria-label="Gallery">
+      <ol class="carousel__viewport">
+         <li id="carousel__slide1" class="carousel__slide">
+            <img src="{% static 'img/filtro_comentarios.jpg' %}" alt="imagem 1">
             <div class="carousel__snapper">
-              <a href="#carousel__slide6"
-                 class="carousel__prev">slide anterior</a>
-              <a href="#carousel__slide2"
-                 class="carousel__next">Go to next slide</a>
+               <a href="#carousel__slide6" class="carousel__prev">slide anterior</a>
+               <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
             </div>
-          </li>
-          <li id="carousel__slide2"
-              tabindex="0"
-              class="carousel__slide">
-              <img src="{% static 'img/cadastro_usuario.jpg' %}" alt="imagem 2">
-            <div class="carousel__snapper"></div>
-            <a href="#carousel__slide1"
-               class="carousel__prev">slide anterior</a>
-            <a href="#carousel__slide3"
-               class="carousel__next">proximo slide</a>
-          </li>
-          <li id="carousel__slide3"
-              tabindex="0"
-              class="carousel__slide">
-              <img src="{% static 'img/tela_login.jpg' %}" alt="imagem 3">
-            <div class="carousel__snapper"></div>
-            <a href="#carousel__slide2"
-               class="carousel__prev">slide anterior</a>
-            <a href="#carousel__slide4"
-               class="carousel__next">proximo slide</a>
-          </li>
-          <li id="carousel__slide4"
-              tabindex="0"
-              class="carousel__slide">
-              <img src="{% static 'img/cadastro_comentario.jpg' %}" alt="imagem 4">
-            <div class="carousel__snapper"></div>
-            <a href="#carousel__slide3"
-               class="carousel__prev">slide anteriore</a>
-            <a href="#carousel__slide5"
-               class="carousel__next">proximo slide</a>
-          </li>
-          <li id="carousel__slide5"
-          tabindex="0"
-          class="carousel__slide">
-          <img src="{% static 'img/tela_comentario.jpg' %}" alt="imagem 5">
-        <div class="carousel__snapper"></div>
-        <a href="#carousel__slide4"
-           class="carousel__prev">slide anterior</a>
-        <a href="#carousel__slide6"
-           class="carousel__next">proximo slide</a>
-      </li>
-    </li>
-    <li id="carousel__slide6"
-    tabindex="0"
-    class="carousel__slide">
-    <img src="{% static 'img/comentario_extendido.jpg' %}" alt="imagem 6">
-  <div class="carousel__snapper"></div>
-  <a href="#carousel__slide5"
-     class="carousel__prev"> slide anterior</a>
-  <a href="#carousel__slide1"
-     class="carousel__next">Ir para o slide</a>
-</li>
-        </ol>
-        <aside class="carousel__navigation">
-          <ol class="carousel__navigation-list">
+         </li>
+         <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+            <img src="{% static 'img/cadastro_usuario.jpg' %}" alt="imagem 2">
+            <div class="carousel__snapper">
+               <a href="#carousel__slide1" class="carousel__prev">slide anterior</a>
+               <a href="#carousel__slide3" class="carousel__next">proximo slide</a>
+            </div>
+         </li>
+         <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+            <img src="{% static 'img/tela_login.jpg' %}" alt="imagem 3">
+            <div class="carousel__snapper">
+               <a href="#carousel__slide2" class="carousel__prev">slide anterior</a>
+               <a href="#carousel__slide4" class="carousel__next">proximo slide</a>
+            </div>
+         </li>
+         <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+            <img src="{% static 'img/cadastro_comentario.jpg' %}" alt="imagem 4">
+            <div class="carousel__snapper">
+               <a href="#carousel__slide3" class="carousel__prev">slide anteriore</a>
+               <a href="#carousel__slide5" class="carousel__next">proximo slide</a>
+            </div>
+         </li>
+         <li id="carousel__slide5" tabindex="0" class="carousel__slide">
+            <img src="{% static 'img/tela_comentario.jpg' %}" alt="imagem 5">
+            <div class="carousel__snapper">
+               <a href="#carousel__slide4" class="carousel__prev">slide anterior</a>
+               <a href="#carousel__slide6" class="carousel__next">proximo slide</a>
+            </div>
+         </li>
+         </li>
+         <li id="carousel__slide6" tabindex="0" class="carousel__slide">
+            <img src="{% static 'img/comentario_extendido.jpg' %}" alt="imagem 6">
+            <div class="carousel__snapper">
+               <a href="#carousel__slide5" class="carousel__prev"> slide anterior</a>
+               <a href="#carousel__slide1" class="carousel__next">Ir para o slide</a>
+            </div>
+         </li>
+      </ol>
+      <aside class="carousel__navigation">
+         <ol class="carousel__navigation-list">
             <li class="carousel__navigation-item">
-              <a href="#carousel__slide1"
-                 class="carousel__navigation-button">Go to slide 1</a>
+               <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
             </li>
             <li class="carousel__navigation-item">
-              <a href="#carousel__slide2"
-                 class="carousel__navigation-button">Ir para slide 2</a>
+               <a href="#carousel__slide2" class="carousel__navigation-button">Ir para slide 2</a>
             </li>
             <li class="carousel__navigation-item">
-              <a href="#carousel__slide3"
-                 class="carousel__navigation-button">Ir para slide 3</a>
+               <a href="#carousel__slide3" class="carousel__navigation-button">Ir para slide 3</a>
             </li>
             <li class="carousel__navigation-item">
-              <a href="#carousel__slide4"
-                 class="carousel__navigation-button">Ir para slide 4</a>
+               <a href="#carousel__slide4" class="carousel__navigation-button">Ir para slide 4</a>
             </li>
             <li class="carousel__navigation-item">
-                <a href="#carousel__slide5"
-                   class="carousel__navigation-button">Ir para slide 5</a>
-              </li>
-              <li class="carousel__navigation-item">
-                <a href="#carousel__slide6"
-                   class="carousel__navigation-button">Ir para slide 6</a>
-              </li>
-          </ol>
-        </aside>
-      </section>
-
-
-
+               <a href="#carousel__slide5" class="carousel__navigation-button">Ir para slide 5</a>
+            </li>
+            <li class="carousel__navigation-item">
+               <a href="#carousel__slide6" class="carousel__navigation-button">Ir para slide 6</a>
+            </li>
+         </ol>
+      </aside>
+   </section>
 </div>
 
 
