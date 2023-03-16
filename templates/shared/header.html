@@ -21,15 +21,44 @@
                         <a class="nav-link" href="{% url 'home' %}">Página inicial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'comentarios/listagem' %}">Comentários</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="{% url 'manual' %}">Manual</a>
                     </li>
+                    <!-- Dropdown Menu-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Reivindicações</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'comentarios/listagem' %}?value=1">Segurança</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="{% url 'comentarios/listagem' %}?value=2">Acessibilidade</a></li>
+                            <li><a class="dropdown-item" href="{% url 'comentarios/listagem' %}?value=3">Saúde
+                                    pública</a></li>
+                            <li><a class="dropdown-item" href="{% url 'comentarios/listagem' %}?value=4">Outros</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Dropdown Menu -->
+
+                    {% if user.is_authenticated %}
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'comentarios/cadastro' %}">Nova Reivindicação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                    </li>
+
+                    {% endif %}
                 </ul>
+
+                {% if not user.is_authenticated %}
+
                 <div class="contexto">
                     <a href="{% url 'login' %}" class="btn btn-primary">Entrar</a>
                 </div>
+
+                {% endif %}
+
             </div>
         </div>
     </nav>

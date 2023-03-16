@@ -13,11 +13,8 @@
 
 {% block 'layout' %}
 
-<div class="conteudo div-p">
-    <div class="titulo">
-        <img src="{% static 'img/logo.png' %}" class="logo" alt="Logo emerald" style="margin-right: 10px;">
-        <h2>Java.<span>Py</span></h2>
-    </div>
+<div class="login div-p">
+    <h2>Entrar</h2>
     <form action="{% url 'login' %}" method="POST" id="login">{% csrf_token %}
         <div class="col-md">
             <div class="input-label-flutuante medio">
@@ -30,6 +27,9 @@
                 <input type="password" id="senha" name="senha" required placeholder="Digite sua senha">
                 <label for="usuario" id="teste">Senha</label>
             </div>
+        </div>
+        <div class="col-md">
+            <a href="" class="texto">Esqueci minha senha.</a>
         </div>
         <div class="col-md acoes">
             <button type="submit" form="login" class="btn btn-primary">Entrar</button>

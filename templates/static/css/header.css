@@ -5,6 +5,7 @@ header {
     padding: 0 10%;
     width: 100%;
     background-color: var(--contrast-color);
+    margin-bottom: 20px;
 }
 
 .navbar-collapse {
@@ -29,6 +30,35 @@ header {
 
 .navbar-nav {
     margin-right: 20px;
+}
+    
+/* Estilizar o botão suspenso */
+.dropbtn {
+    padding: 16px;
+    border: none;
+}
+
+/* Conteúdo suspenso (oculto por padrão) */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links dentro do menu suspenso */
+.dropdown-menu a {
+    color: var(--main-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Mostrar o menu suspenso ao passar o mouse */
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 @media (max-width: 991px) {
