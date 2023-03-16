@@ -79,4 +79,4 @@ $ python manage.py runserver
 ## Agradecimentos
 
 * O time foi ágil e preciso.
-* Obrigado ao instrutor Andre Vitor Granemann.
+* Obrigado ao instrutor André Vitor Granemann.
