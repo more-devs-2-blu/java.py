@@ -1,11 +1,11 @@
 {% extends 'Layout.html' %}
 {% load static %}
 
-{% block 'title' %}Sobre{% endblock 'title' %}
+{% block 'title' %}Manual{% endblock 'title' %}
 
 {% block 'scripts' %}
 
-<link rel="stylesheet" href="{% static 'css/main/sobre.css'%}">
+<link rel="stylesheet" href="{% static 'css/main/manual.css'%}">
 <script src="{% static 'scripts/edicao.js'%}"></script>
 
 {% endblock 'scripts' %}
@@ -13,27 +13,107 @@
 {% block 'content' %}
 
 <div class='conteudo'>
-    <div>
-        <h3>O melhor e-commerce para a sua empresa Fornecemos os melhores
-            produtos para o seu negócio!</h3>
-        <p>
-            Em nosso e-commerce, vendemos produtos em grandes quantidades para outras empresas.
-            Através de nossa plataforma online, oferecemos uma ampla variedade de produtos, desde alimentos e bebidas
-            até produtos eletrônicos e materiais de construção.
-            Nele nossos clientes podem fazer pedidos rapidamente e de forma fácil, podendo escolher os produtos
-            desejados, quantidades e formas de pagamento.
-        </p>
-    </div>
-    <div>
-        <h3>E-merald</h3>
-        <p>
-            Esmeralda é uma pedra preciosa de cor verde, que pertence à família mineral do berilo.
-            Ela é uma das pedras mais valiosas do mundo, junto com o diamante, rubi e safira.
-            A cor verde da esmeralda é devida à presença de cromo e vanádio em sua composição química.
-            Dessa forma, tratamos nossos produtos como esmeraldas para nossos clientes.
-        </p>
-    </div>
+
+    <h2 style="text-align: center">Manual de utilizacao</h2>
+    
+    <section class="carousel" aria-label="Gallery" >
+        <ol class="carousel__viewport">
+          <li id="carousel__slide1"
+              class="carousel__slide">
+              <img src="{% static 'img/filtro_comentarios.jpg' %}" alt="imagem 1">
+            <div class="carousel__snapper">
+              <a href="#carousel__slide6"
+                 class="carousel__prev">slide anterior</a>
+              <a href="#carousel__slide2"
+                 class="carousel__next">Go to next slide</a>
+            </div>
+          </li>
+          <li id="carousel__slide2"
+              tabindex="0"
+              class="carousel__slide">
+              <img src="{% static 'img/cadastro_usuario.jpg' %}" alt="imagem 2">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide1"
+               class="carousel__prev">slide anterior</a>
+            <a href="#carousel__slide3"
+               class="carousel__next">proximo slide</a>
+          </li>
+          <li id="carousel__slide3"
+              tabindex="0"
+              class="carousel__slide">
+              <img src="{% static 'img/tela_login.jpg' %}" alt="imagem 3">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide2"
+               class="carousel__prev">slide anterior</a>
+            <a href="#carousel__slide4"
+               class="carousel__next">proximo slide</a>
+          </li>
+          <li id="carousel__slide4"
+              tabindex="0"
+              class="carousel__slide">
+              <img src="{% static 'img/cadastro_comentario.jpg' %}" alt="imagem 4">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide3"
+               class="carousel__prev">slide anteriore</a>
+            <a href="#carousel__slide5"
+               class="carousel__next">proximo slide</a>
+          </li>
+          <li id="carousel__slide5"
+          tabindex="0"
+          class="carousel__slide">
+          <img src="{% static 'img/tela_comentario.jpg' %}" alt="imagem 5">
+        <div class="carousel__snapper"></div>
+        <a href="#carousel__slide4"
+           class="carousel__prev">slide anterior</a>
+        <a href="#carousel__slide6"
+           class="carousel__next">proximo slide</a>
+      </li>
+    </li>
+    <li id="carousel__slide6"
+    tabindex="0"
+    class="carousel__slide">
+    <img src="{% static 'img/comentario_extendido.jpg' %}" alt="imagem 6">
+  <div class="carousel__snapper"></div>
+  <a href="#carousel__slide5"
+     class="carousel__prev"> slide anterior</a>
+  <a href="#carousel__slide1"
+     class="carousel__next">Ir para o slide</a>
+</li>
+        </ol>
+        <aside class="carousel__navigation">
+          <ol class="carousel__navigation-list">
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide1"
+                 class="carousel__navigation-button">Go to slide 1</a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide2"
+                 class="carousel__navigation-button">Ir para slide 2</a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide3"
+                 class="carousel__navigation-button">Ir para slide 3</a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide4"
+                 class="carousel__navigation-button">Ir para slide 4</a>
+            </li>
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide5"
+                   class="carousel__navigation-button">Ir para slide 5</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide6"
+                   class="carousel__navigation-button">Ir para slide 6</a>
+              </li>
+          </ol>
+        </aside>
+      </section>
+
+
+
 </div>
+
 
 {% endblock 'content' %}
 

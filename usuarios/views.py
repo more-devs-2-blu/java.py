@@ -1,7 +1,6 @@
-from django.http import HttpResponse
+from django.contrib import messages
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.decorators import login_required
 from .models import Cidadao
 from django.db.models import Q
 
@@ -57,7 +56,8 @@ def Login(request):
         user = Cidadao.objects.get(cpf_cnpj=cpf)
     except Cidadao.DoesNotExist:
         # email não existe
-        return HttpResponse('Usuário ou senha inválidos')
+        messages.error(request, 'Usuário ou senha inválida')
+        return render(request, 'usuarios/login.html')
 
     if user.check_password(senha):
         # senha válida, autenticar usuário
@@ -66,13 +66,8 @@ def Login(request):
             login(request, user)
             return redirect('home')
 
-
-    return HttpResponse('Usuário ou senha inválidos')
-
-
-@login_required
-def AlgumaCoisa(request):
-    return HttpResponse('Plataforma')
+    messages.error(request, 'Usuário ou senha inválida')
+    return render(request, 'usuarios/login.html')
 
 
 def Logout(request):

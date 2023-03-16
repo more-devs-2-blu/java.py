@@ -156,3 +156,4 @@ function DefinirCampoComoOpcional(campo) {
     campo.removeAttr('required');
     campo.next('label').find('span').remove();
 }
+
