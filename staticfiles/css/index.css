@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+:root {
+    --main-color: #203AC3;
+    --dark-color: #0C1862;
+    --light-color: #93A0EE;
+    --contrast-color: rgb(230, 230, 230);
+    --contrast-color-opacity: rgba(255, 255, 255, 0.6);
+    --differencial-color: #6d80ef;
+    --danger-color: #dc3545;
+    --danger-color-dark: #842029;
+
+    --fonte-logo: "Ubuntu", sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--contrast-color);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--main-color);
+    margin-bottom: 30px;
+}
+
+h2.titulo {
+    margin: 0;
+    font-family: var(--fonte-logo);
+}
+
+h2.titulo span {
+    color: var(--dark-color);
+    font-family: var(--fonte-logo);
+}
+
+a,
+a:hover {
+    color: var(--contrast-color);
+}
+
+.space {
+    flex: 1 1 100px;
+}
+
+.invisivel {
+    display: none;
+}
+
+.logo {
+    width: 64px;
+}
+
+.btn-primary {
+    background-color: var(--main-color);
+    color: white;
+    border-color: var(--main-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-color) !important;
+    border-color: var(--dark-color) !important;
+}
+
+.btn-primary:active {
+    background-color: var(--dark-color) !important;
+    border-color: var(--dark-color) !important;
+}
+
+.btn-secondary {
+    background-color: var(--light-color);
+    color: white;
+    border-color: var(--light-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--differencial-color) !important;
+    border-color: var(--differencial-color) !important;
+}
+
+.btn-secondary:active {
+    background-color: var(--differencial-color) !important;
+    border-color: var(--differencial-color) !important;
+}
+
+.div-p {
+    width: 25%;
+}
+
+.div-m {
+    width: 50%;
+}
+
+.div-g {
+    width: 75%;
+}
+
+.conteudo {
+    padding: 20px 10%;
+    width: 100%;
+}
+
+.alert-error {
+    background-color: var(--danger-color-dark);
+    color: var(--contrast-color);
+    border: 2px solid var(--danger-color);
+}
+
+@media (max-width: 991px) {
+    .div-p {
+        width: 90%;
+    }
+
+    .div-m {
+        width: 90%;
+    }
+
+    .div-g {
+        width: 90%;
+    }
+
+    .conteudo {
+        padding: 20px 1%;
+    }
+}

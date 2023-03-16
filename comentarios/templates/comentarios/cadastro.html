@@ -2,7 +2,7 @@
 
 {% load static %}
 
-{% block 'title'%}Cadastro comentário{% endblock 'title' %}
+{% block 'title'%}Cadastro reivindicação{% endblock 'title' %}
 {% block 'scripts' %}
 
 <link rel="stylesheet" href="{% static 'css/comentarios/cadastro.css'%}">
@@ -14,14 +14,26 @@
 
 
 <div class="conteudo">
-    <h1>Cadastro de comentários</h1>
+    <h1>Cadastro de Reivindicação</h1>
 
     <form action="{% url 'comentarios/cadastro' %}" id="cadastro" method="post">
         {% csrf_token %}
+
         <div class="linha">
             <div class="col-md">
                 <div class="linha">
-                    <div class="input-label-flutuante medio">
+                    <div class="input-label grande">
+                        <label for="categoria">Categoria</label>
+                        <select name="categoria">
+                            <option value="1">Segurança</option>
+                            <option value="2">Acessibilidade</option>
+                            <option value="3">Saúde pública</option>
+                            <option value="4">Outros</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="input-label-flutuante grande">
                         <input type="text" id="resumo" name="resumo" required
                             placeholder="Digite o tópico do seu comentário">
                         <label for="resumo">Assunto</label>
@@ -29,7 +41,7 @@
                 </div>
 
                 <div class="linha">
-                    <div class="input-label-flutuante pequeno">
+                    <div class="input-label-flutuante medio">
                         <input type="text" class="cep" id="cep" name="cep" required
                             placeholder="Digite o tópico do seu cep">
                         <label for="cep">CEP</label>
@@ -60,7 +72,7 @@
                         <label for="rua">Rua</label>
                     </div>
                     <div class="input-label-flutuante pequeno">
-                        <input type="text" id="numero" name="numero" placeholder="Digite">
+                        <input type="text" id="numero" name="numero" required placeholder="Digite">
                         <label for="numero">Número</label>
                     </div>
                 </div>
@@ -69,18 +81,6 @@
                     <div class="input-label-flutuante grande">
                         <input type="text" id="complemento" name="complemento" placeholder="Digite">
                         <label for="complemento">Complemento</label>
-                    </div>
-                </div>
-
-                <div class="linha">
-                    <div class="input-label medio">
-                        <label for="categoria">Categoria</label>
-                        <select name="categoria">
-                            <option value="1">Segurança</option>
-                            <option value="2">Acessibilidade</option>
-                            <option value="3">Saúde pública</option>
-                            <option value="4">Outros</option>
-                        </select>
                     </div>
                 </div>
             </div>

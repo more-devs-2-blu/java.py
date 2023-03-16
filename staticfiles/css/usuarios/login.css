@@ -1,0 +1,43 @@
+body {
+    background-color: var(--dark-color);
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    min-height: 300px;
+    background-color: var(--contrast-color);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 200px 100px var(--main-color);
+}
+
+.login h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login form .linha {
+    justify-content: center;
+}
+
+.texto {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.texto:hover {
+    color: var(--dark-color);
+}
+
+.texto:visited {
+    color: var(--main-color);
+}
