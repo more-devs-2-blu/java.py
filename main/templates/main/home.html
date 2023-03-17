@@ -12,16 +12,17 @@
 {% block 'content' %}
 
 <div class="conteudo">
-    <div class="secao" >
+    <div class="secao">
         <h2>O jeito mais rápido de conectar o cidadão com a prefeitura.</h2>
         <p>O Reclama Brasil é uma plataforma de sugestões, reclamações e elogios
             desenvolvida para facilitar a comunicação entre a população e o poder
             público.</p>
         <p> O objetivo principal é fornecer aos cidadãos um canal direto
-            de comunicação com a prefeitura para expressar suas opiniões sobre 
+            de comunicação com a prefeitura para expressar suas opiniões sobre
             a qualidade dos serviços oferecidos e das condições dos espaços públicos.</p>
-        <a href="{% url 'cadastro'%}"  class="btn btn-primary">Cadastre-se</a>
+        <a href="{% url 'cadastro'%}" class="btn btn-primary">Cadastre-se</a>
     </div>
+    <img src="{% static 'img/logo.png' %}" alt="Logo java.py">
 </div>
 
 {% endblock 'content' %}

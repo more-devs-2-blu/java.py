@@ -1,1 +1,1 @@
-web: gunicorn emerald.wsgi --log-file -
+web: gunicorn zeladoria.wsgi --log-file -

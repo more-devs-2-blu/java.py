@@ -99,10 +99,6 @@ STATICFILES_DIRS = [
 # Caminho dos arquivos estáticos da produção
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# Onde é salvo os arquivos de media salvos pelo usuário
-MEDIA_URL = 'media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Limpa a sessão quando o browser é fechado
